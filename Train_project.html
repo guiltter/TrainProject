@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>train_project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Train_project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,12 +7510,46 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Off-The-Rails:-An-Analytical-Look"><em><strong>Off The Rails: An Analytical Look</strong></em><a class="anchor-link" href="#Off-The-Rails:-An-Analytical-Look">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="0-Introduction">0-Introduction<a class="anchor-link" href="#0-Introduction">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Any successful company needs to make educated decisions to advance (or prolong) its success, that much has always been clear. In this project, I will analyze a data set of a train company to try and give it advice on important decisions and such.</p>
+<p>Let's begin by loading in our data and importing our files.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -7536,7 +7570,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="1-Data-Wrangling">1-Data Wrangling<a class="anchor-link" href="#1-Data-Wrangling">¶</a></h1><p>Now that we've loaded our data, it's time to check the data for errors and clean them, commonly known as 'Data Wrangling'.</p>
+<p><em>Side note: The data used in this project is training data gotton from Maven Analytics.com (<a href="https://mavenanalytics.io/data-playground?order=date_added%2Cdesc">https://mavenanalytics.io/data-playground?order=date_added%2Cdesc</a>)</em></p>
 </div>
 </div>
 </div>
@@ -7547,7 +7581,18 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="0-General-Properties:"><strong>0-General Properties:</strong><a class="anchor-link" href="#0-General-Properties:">¶</a></h2>
+<h2 id="1-Data-Wrangling">1-Data Wrangling<a class="anchor-link" href="#1-Data-Wrangling">¶</a></h2><p>Now that we've loaded our data, it's time to check the data for errors and clean them, commonly known as 'Data Wrangling'.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="0-General-Properties:"><strong>0-General Properties:</strong><a class="anchor-link" href="#0-General-Properties:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7556,7 +7601,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -7570,9 +7615,9 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-6dc972c4-e5a0-4696-9432-2e213637b682">
+<div class="colab-df-container" id="df-33182b8a-850f-45d3-8721-3963ac9698cb">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -7722,7 +7767,7 @@ a.anchor-link {
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-6dc972c4-e5a0-4696-9432-2e213637b682')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-33182b8a-850f-45d3-8721-3963ac9698cb')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -7769,12 +7814,12 @@ a.anchor-link {
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-6dc972c4-e5a0-4696-9432-2e213637b682 button.colab-df-convert');
+        document.querySelector('#df-33182b8a-850f-45d3-8721-3963ac9698cb button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6dc972c4-e5a0-4696-9432-2e213637b682');
+        const element = document.querySelector('#df-33182b8a-850f-45d3-8721-3963ac9698cb');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7792,8 +7837,8 @@ a.anchor-link {
       }
     </script>
 </div>
-<div id="df-bd776b34-abb8-4cc5-ba61-b1cfa9f539a9">
-<button class="colab-df-quickchart" onclick="quickchart('df-bd776b34-abb8-4cc5-ba61-b1cfa9f539a9')" style="display:none;" title="Suggest charts">
+<div id="df-631d69c0-8a72-443d-bf24-73c8b7d31d0f">
+<button class="colab-df-quickchart" onclick="quickchart('df-631d69c0-8a72-443d-bf24-73c8b7d31d0f')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -7906,7 +7951,7 @@ a.anchor-link {
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-bd776b34-abb8-4cc5-ba61-b1cfa9f539a9 button');
+        document.querySelector('#df-631d69c0-8a72-443d-bf24-73c8b7d31d0f button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -7918,12 +7963,23 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The shape of our data ensures that most of it is <strong>categorical</strong> which has its upsides and downsides. An upside of our data is that we wont have many outliers because of the lack of numerical data but a downside is that categorical data is more tricky to deal with in Exploratory Data Analysis.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -7976,7 +8032,19 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1--Identifying-NaNs:"><strong>1- Identifying NaNs:</strong><a class="anchor-link" href="#1--Identifying-NaNs:">¶</a></h2>
+<p>There seem to be some NaN values, but those arent our concern at the moment as we're just surveying the data.</p>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1--Identifying-NaNs:"><strong>1- Identifying NaNs:</strong><a class="anchor-link" href="#1--Identifying-NaNs:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7985,7 +8053,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -7999,7 +8067,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8110,9 +8178,9 @@ memory usage: 4.3+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>As you can see, we have <strong>three</strong> columns with NaN values, specifically the 'Railcard' , 'Reason For delay' and  'Actual Arrival Time' columns. Two of which have logical reasons behind their missing values.</p>
-<p>First, the Railcard columnis left empty in the case a passanger is not a National Railcard Holder, therefore it makes sense to be have missing values.</p>
+<p>First, the Railcard column is left empty in the case a passanger is not a National Railcard Holder, therefore it makes sense to be have missing values.</p>
 <p>Second, the Reason For Delay column is left empty in the case of no delays, which is logically reasonable.</p>
-<p>Finally, the Actual Arrival Time column is left without an excuse for having empty spaces, this will be addressed further in the cleaning section.</p>
+<p>Finally, the Actual Arrival Time column has a reason to be left empty, but its a bit more technical and will be addressed deeper in the cleaning section.</p>
 <hr/>
 </div>
 </div>
@@ -8124,7 +8192,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2-Duplicate-Rows:"><strong>2-Duplicate Rows:</strong><a class="anchor-link" href="#2-Duplicate-Rows:">¶</a></h2>
+<h3 id="2-Duplicate-Rows:"><strong>2-Duplicate Rows:</strong><a class="anchor-link" href="#2-Duplicate-Rows:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8144,7 +8212,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8158,7 +8226,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -8184,7 +8252,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3-Checking-for-Mixed-Data-Types:"><strong>3-Checking for Mixed Data Types:</strong><a class="anchor-link" href="#3-Checking-for-Mixed-Data-Types:">¶</a></h2>
+<h3 id="3-Checking-for-Mixed-Data-Types:"><strong>3-Checking for Mixed Data Types:</strong><a class="anchor-link" href="#3-Checking-for-Mixed-Data-Types:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8204,7 +8272,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -8250,373 +8318,6 @@ memory usage: 4.3+ MB
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-2b1e9c82-98b0-4b74-a0e8-fb5428b6ce02">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>Transaction ID</th>
-<th>Date of Purchase</th>
-<th>Time of Purchase</th>
-<th>Purchase Type</th>
-<th>Payment Method</th>
-<th>Railcard</th>
-<th>Ticket Class</th>
-<th>Ticket Type</th>
-<th>Price</th>
-<th>Departure Station</th>
-<th>Arrival Destination</th>
-<th>Date of Journey</th>
-<th>Departure Time</th>
-<th>Arrival Time</th>
-<th>Actual Arrival Time</th>
-<th>Journey Status</th>
-<th>Reason for Delay</th>
-<th>Refund Request</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>da8a6ba8-b3dc-4677-b176</td>
-<td>2023-12-08</td>
-<td>12:41:11</td>
-<td>Online</td>
-<td>Contactless</td>
-<td>Adult</td>
-<td>Standard</td>
-<td>Advance</td>
-<td>43</td>
-<td>London Paddington</td>
-<td>Liverpool Lime Street</td>
-<td>2024-01-01</td>
-<td>11:00:00</td>
-<td>13:30:00</td>
-<td>13:30:00</td>
-<td>On Time</td>
-<td>NaN</td>
-<td>No</td>
-</tr>
-<tr>
-<th>1</th>
-<td>b0cdd1b0-f214-4197-be53</td>
-<td>2023-12-16</td>
-<td>11:23:01</td>
-<td>Station</td>
-<td>Credit Card</td>
-<td>Adult</td>
-<td>Standard</td>
-<td>Advance</td>
-<td>23</td>
-<td>London Kings Cross</td>
-<td>York</td>
-<td>2024-01-01</td>
-<td>09:45:00</td>
-<td>11:35:00</td>
-<td>11:40:00</td>
-<td>Delayed</td>
-<td>Signal Failure</td>
-<td>No</td>
-</tr>
-<tr>
-<th>2</th>
-<td>f3ba7a96-f713-40d9-9629</td>
-<td>2023-12-19</td>
-<td>19:51:27</td>
-<td>Online</td>
-<td>Credit Card</td>
-<td>NaN</td>
-<td>Standard</td>
-<td>Advance</td>
-<td>3</td>
-<td>Liverpool Lime Street</td>
-<td>Manchester Piccadilly</td>
-<td>2024-01-02</td>
-<td>18:15:00</td>
-<td>18:45:00</td>
-<td>18:45:00</td>
-<td>On Time</td>
-<td>NaN</td>
-<td>No</td>
-</tr>
-<tr>
-<th>3</th>
-<td>b2471f11-4fe7-4c87-8ab4</td>
-<td>2023-12-20</td>
-<td>23:00:36</td>
-<td>Station</td>
-<td>Credit Card</td>
-<td>NaN</td>
-<td>Standard</td>
-<td>Advance</td>
-<td>13</td>
-<td>London Paddington</td>
-<td>Reading</td>
-<td>2024-01-01</td>
-<td>21:30:00</td>
-<td>22:30:00</td>
-<td>22:30:00</td>
-<td>On Time</td>
-<td>NaN</td>
-<td>No</td>
-</tr>
-<tr>
-<th>4</th>
-<td>2be00b45-0762-485e-a7a3</td>
-<td>2023-12-27</td>
-<td>18:22:56</td>
-<td>Online</td>
-<td>Contactless</td>
-<td>NaN</td>
-<td>Standard</td>
-<td>Advance</td>
-<td>76</td>
-<td>Liverpool Lime Street</td>
-<td>London Euston</td>
-<td>2024-01-01</td>
-<td>16:45:00</td>
-<td>19:00:00</td>
-<td>19:00:00</td>
-<td>On Time</td>
-<td>NaN</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-2b1e9c82-98b0-4b74-a0e8-fb5428b6ce02')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
-</button>
-<style>
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-<script>
-      const buttonEl =
-        document.querySelector('#df-2b1e9c82-98b0-4b74-a0e8-fb5428b6ce02 button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-2b1e9c82-98b0-4b74-a0e8-fb5428b6ce02');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    </script>
-</div>
-<div id="df-50db4bd2-fb3c-4bf1-bf4f-ce15fcedeb79">
-<button class="colab-df-quickchart" onclick="quickchart('df-50db4bd2-fb3c-4bf1-bf4f-ce15fcedeb79')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
-</button>
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-<script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-50db4bd2-fb3c-4bf1-bf4f-ce15fcedeb79 button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8636,7 +8337,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4-Categorical-Consistency:"><strong>4-Categorical Consistency:</strong><a class="anchor-link" href="#4-Categorical-Consistency:">¶</a></h2>
+<h3 id="4-Categorical-Consistency:"><strong>4-Categorical Consistency:</strong><a class="anchor-link" href="#4-Categorical-Consistency:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8656,7 +8357,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Railcard'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8670,7 +8371,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['Adult', nan, 'Disabled', 'Senior'], dtype=object)</pre>
 </div>
@@ -8682,7 +8383,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Ticket Type'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8696,7 +8397,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['Advance', 'Off-Peak', 'Anytime'], dtype=object)</pre>
 </div>
@@ -8708,7 +8409,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Payment Method'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8722,7 +8423,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['Contactless', 'Credit Card', 'Debit Card'], dtype=object)</pre>
 </div>
@@ -8734,7 +8435,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Ticket Class'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8748,7 +8449,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['Standard', 'First Class'], dtype=object)</pre>
 </div>
@@ -8760,7 +8461,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Refund Request'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8774,7 +8475,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['No', 'Yes'], dtype=object)</pre>
 </div>
@@ -8786,7 +8487,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Journey Status'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8800,7 +8501,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array(['On Time', 'Delayed', 'Cancelled'], dtype=object)</pre>
 </div>
@@ -8826,7 +8527,7 @@ memory usage: 4.3+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="2-Data-Cleaning">2-Data Cleaning<a class="anchor-link" href="#2-Data-Cleaning">¶</a></h1><p>Now that we've identified our problems, it's time to get to clear them of our dataset!</p>
+<h2 id="2-Data-Cleaning">2-Data Cleaning<a class="anchor-link" href="#2-Data-Cleaning">¶</a></h2><p>Now that we've identified our problems, it's time to get to clear them of our dataset!</p>
 <hr/>
 </div>
 </div>
@@ -8838,7 +8539,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1--NaN-values:"><strong>1- NaN values</strong>:<a class="anchor-link" href="#1--NaN-values:">¶</a></h2>
+<h3 id="1--NaN-values:"><strong>1- NaN values</strong>:<a class="anchor-link" href="#1--NaN-values:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8859,7 +8560,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">NaN_Actual</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Actual Arrival Time'</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span>
@@ -8874,9 +8575,9 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-cfe2deb1-8e3f-43b8-8a25-52295d08aa0f">
+<div class="colab-df-container" id="df-b7694cca-bd72-418b-9726-e281cfcded54">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9153,7 +8854,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-cfe2deb1-8e3f-43b8-8a25-52295d08aa0f')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-b7694cca-bd72-418b-9726-e281cfcded54')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -9200,12 +8901,12 @@ memory usage: 4.3+ MB
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-cfe2deb1-8e3f-43b8-8a25-52295d08aa0f button.colab-df-convert');
+        document.querySelector('#df-b7694cca-bd72-418b-9726-e281cfcded54 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cfe2deb1-8e3f-43b8-8a25-52295d08aa0f');
+        const element = document.querySelector('#df-b7694cca-bd72-418b-9726-e281cfcded54');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9223,8 +8924,8 @@ memory usage: 4.3+ MB
       }
     </script>
 </div>
-<div id="df-c1e479d4-f8a2-4143-8ff5-dc7d9048e70d">
-<button class="colab-df-quickchart" onclick="quickchart('df-c1e479d4-f8a2-4143-8ff5-dc7d9048e70d')" style="display:none;" title="Suggest charts">
+<div id="df-e1b7ec75-bb77-4605-8a4e-644a9dee0f15">
+<button class="colab-df-quickchart" onclick="quickchart('df-e1b7ec75-bb77-4605-8a4e-644a9dee0f15')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -9337,13 +9038,13 @@ memory usage: 4.3+ MB
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-c1e479d4-f8a2-4143-8ff5-dc7d9048e70d button');
+        document.querySelector('#df-e1b7ec75-bb77-4605-8a4e-644a9dee0f15 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_477c6417-3f23-449e-ac39-93e04d0346c5">
+<div id="id_bc7b4dfe-1dbb-4ca9-a277-7411bbf73483">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -9383,7 +9084,7 @@ memory usage: 4.3+ MB
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_477c6417-3f23-449e-ac39-93e04d0346c5 button.colab-df-generate');
+        document.querySelector('#id_bc7b4dfe-1dbb-4ca9-a277-7411bbf73483 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -9415,7 +9116,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Actual Arrival Time'</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">"Actual Arrival Time"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">'Journey Cancelled'</span><span class="p">)</span>
@@ -9430,7 +9131,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -9453,7 +9154,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Railcard'</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">'Railcard'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">"No Railcard"</span><span class="p">)</span>
@@ -9468,7 +9169,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -9480,7 +9181,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Reason for Delay'</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">'Reason for Delay'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">"No Delay"</span><span class="p">)</span>
@@ -9495,7 +9196,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -9521,7 +9222,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2-Mixed-data-types:"><strong>2-Mixed data types:</strong><a class="anchor-link" href="#2-Mixed-data-types:">¶</a></h2>
+<h3 id="2-Mixed-data-types:"><strong>2-Mixed data types:</strong><a class="anchor-link" href="#2-Mixed-data-types:">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9542,7 +9243,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Date of Purchase'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Date of Purchase'</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">'coerce'</span><span class="p">)</span>
@@ -9610,18 +9311,7 @@ memory usage: 4.3+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="3-Data-Analysis">3-Data Analysis<a class="anchor-link" href="#3-Data-Analysis">¶</a></h1><p>Now that our data is clean of all errors, its time to pick it apart and reach conclusions!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This section will be structured as different questions we need answered as seperate sections seperated by a line, like so.</p>
+<h2 id="3-Data-Analysis">3-Data Analysis<a class="anchor-link" href="#3-Data-Analysis">¶</a></h2><p>Now that our data is clean of all errors, its time to pick it apart and reach conclusions!</p>
 <hr/>
 </div>
 </div>
@@ -9633,7 +9323,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1-Does-cancelling-a-journey-or-delaying-it-cause-more-refunds?"><strong>1-Does cancelling a journey or delaying it cause more refunds?</strong><a class="anchor-link" href="#1-Does-cancelling-a-journey-or-delaying-it-cause-more-refunds?">¶</a></h2>
+<h3 id="1-Does-cancelling-a-journey-or-delaying-it-cause-more-refunds?"><strong>1-Does cancelling a journey or delaying it cause more refunds?</strong><a class="anchor-link" href="#1-Does-cancelling-a-journey-or-delaying-it-cause-more-refunds?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9653,7 +9343,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">delay</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">'Journey Status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Delayed'</span><span class="p">]</span>
@@ -9679,7 +9369,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">cancelled_refunds</span> <span class="o">=</span> <span class="n">cancelled</span><span class="p">[</span><span class="n">cancelled</span><span class="p">[</span><span class="s1">'Refund Request'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Yes'</span><span class="p">]</span>
@@ -9708,7 +9398,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">delay_refunds</span> <span class="o">=</span> <span class="n">delay</span><span class="p">[</span><span class="n">delay</span><span class="p">[</span><span class="s1">'Refund Request'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Yes'</span><span class="p">]</span>
@@ -9752,7 +9442,7 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2-Which-arrival-destination-is-the-most-expensive?"><strong>2-Which arrival destination is the most expensive?</strong><a class="anchor-link" href="#2-Which-arrival-destination-is-the-most-expensive?">¶</a></h2>
+<h3 id="2-Which-arrival-destination-is-the-most-profitable?"><strong>2-Which arrival destination is the most profitable?</strong><a class="anchor-link" href="#2-Which-arrival-destination-is-the-most-profitable?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9772,7 +9462,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Calculate average price for each arrival destination</span>
@@ -9823,7 +9513,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">"Arrival Destination"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(),</span> <span class="n">y</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">"Arrival Destination"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">());</span>
@@ -9866,7 +9556,7 @@ memory usage: 4.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Calculate the count of each arrival destination</span>
@@ -9919,267 +9609,51 @@ memory usage: 4.3+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="ignore">ignore<a class="anchor-link" href="#ignore">¶</a></h3>
+<hr/>
+<h2 id="4-Conclusion">4-Conclusion<a class="anchor-link" href="#4-Conclusion">¶</a></h2><p>In this section, we'll wrap up our work and summarize it.</p>
+<hr/>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
-<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">Train_project</span><span class="o">.</span><span class="n">ipynb</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This project yielded some interesting results, so lets list them.</p>
+<ul>
+<li>Cancelling a journey causes more refunds than delaying it, so it'd be counterintuitive to cancel a delayed journey.</li>
+<li>Wakefield is our most profitable destination, meaning we should be sure to send more trips there.</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[NbConvertApp] WARNING | pattern '/content/Train_project.ipynb' matched no files
-This application is used to convert notebook files (*.ipynb)
-        to various other formats.
-
-        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
-
-Options
-=======
-The options below are convenience aliases to configurable class-options,
-as listed in the "Equivalent to" description-line of the aliases.
-To see all configurable class-options for some &lt;cmd&gt;, use:
-    &lt;cmd&gt; --help-all
-
---debug
-    set log level to logging.DEBUG (maximize logging output)
-    Equivalent to: [--Application.log_level=10]
---show-config
-    Show the application's configuration (human-readable format)
-    Equivalent to: [--Application.show_config=True]
---show-config-json
-    Show the application's configuration (json format)
-    Equivalent to: [--Application.show_config_json=True]
---generate-config
-    generate default config file
-    Equivalent to: [--JupyterApp.generate_config=True]
--y
-    Answer yes to any questions instead of prompting.
-    Equivalent to: [--JupyterApp.answer_yes=True]
---execute
-    Execute the notebook prior to export.
-    Equivalent to: [--ExecutePreprocessor.enabled=True]
---allow-errors
-    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.
-    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
---stdin
-    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'
-    Equivalent to: [--NbConvertApp.from_stdin=True]
---stdout
-    Write notebook output to stdout instead of files.
-    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
---inplace
-    Run nbconvert in place, overwriting the existing notebook (only
-            relevant when converting to notebook format)
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
---clear-output
-    Clear output of current file and save in place,
-            overwriting the existing notebook.
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
---coalesce-streams
-    Coalesce consecutive stdout and stderr outputs into one stream (within each cell).
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --CoalesceStreamsPreprocessor.enabled=True]
---no-prompt
-    Exclude input and output prompts from converted document.
-    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
---no-input
-    Exclude input cells and output prompts from converted document.
-            This mode is ideal for generating code-free reports.
-    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_input_prompt=True]
---allow-chromium-download
-    Whether to allow downloading chromium if no suitable version is found on the system.
-    Equivalent to: [--WebPDFExporter.allow_chromium_download=True]
---disable-chromium-sandbox
-    Disable chromium security sandbox when converting to PDF..
-    Equivalent to: [--WebPDFExporter.disable_sandbox=True]
---show-input
-    Shows code input. This flag is only useful for dejavu users.
-    Equivalent to: [--TemplateExporter.exclude_input=False]
---embed-images
-    Embed the images as base64 dataurls in the output. This flag is only useful for the HTML/WebPDF/Slides exports.
-    Equivalent to: [--HTMLExporter.embed_images=True]
---sanitize-html
-    Whether the HTML in Markdown cells and cell outputs should be sanitized..
-    Equivalent to: [--HTMLExporter.sanitize_html=True]
---log-level=&lt;Enum&gt;
-    Set the log level by value or name.
-    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']
-    Default: 30
-    Equivalent to: [--Application.log_level]
---config=&lt;Unicode&gt;
-    Full path of a config file.
-    Default: ''
-    Equivalent to: [--JupyterApp.config_file]
---to=&lt;Unicode&gt;
-    The export format to be used, either one of the built-in formats
-            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf']
-            or a dotted object name that represents the import path for an
-            ``Exporter`` class
-    Default: ''
-    Equivalent to: [--NbConvertApp.export_format]
---template=&lt;Unicode&gt;
-    Name of the template to use
-    Default: ''
-    Equivalent to: [--TemplateExporter.template_name]
---template-file=&lt;Unicode&gt;
-    Name of the template file to use
-    Default: None
-    Equivalent to: [--TemplateExporter.template_file]
---theme=&lt;Unicode&gt;
-    Template specific theme(e.g. the name of a JupyterLab CSS theme distributed
-    as prebuilt extension for the lab template)
-    Default: 'light'
-    Equivalent to: [--HTMLExporter.theme]
---sanitize_html=&lt;Bool&gt;
-    Whether the HTML in Markdown cells and cell outputs should be sanitized.This
-    should be set to True by nbviewer or similar tools.
-    Default: False
-    Equivalent to: [--HTMLExporter.sanitize_html]
---writer=&lt;DottedObjectName&gt;
-    Writer class used to write the
-                                        results of the conversion
-    Default: 'FilesWriter'
-    Equivalent to: [--NbConvertApp.writer_class]
---post=&lt;DottedOrNone&gt;
-    PostProcessor class used to write the
-                                        results of the conversion
-    Default: ''
-    Equivalent to: [--NbConvertApp.postprocessor_class]
---output=&lt;Unicode&gt;
-    Overwrite base name use for output files.
-                Supports pattern replacements '{notebook_name}'.
-    Default: '{notebook_name}'
-    Equivalent to: [--NbConvertApp.output_base]
---output-dir=&lt;Unicode&gt;
-    Directory to write output(s) to. Defaults
-                                  to output to the directory of each notebook. To recover
-                                  previous default behaviour (outputting to the current
-                                  working directory) use . as the flag value.
-    Default: ''
-    Equivalent to: [--FilesWriter.build_directory]
---reveal-prefix=&lt;Unicode&gt;
-    The URL prefix for reveal.js (version 3.x).
-            This defaults to the reveal CDN, but can be any url pointing to a copy
-            of reveal.js.
-            For speaker notes to work, this must be a relative path to a local
-            copy of reveal.js: e.g., "reveal.js".
-            If a relative path is given, it must be a subdirectory of the
-            current directory (from which the server is run).
-            See the usage documentation
-            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
-            for more details.
-    Default: ''
-    Equivalent to: [--SlidesExporter.reveal_url_prefix]
---nbformat=&lt;Enum&gt;
-    The nbformat version to write.
-            Use this to downgrade notebooks.
-    Choices: any of [1, 2, 3, 4]
-    Default: 4
-    Equivalent to: [--NotebookExporter.nbformat_version]
-
-Examples
---------
-
-    The simplest way to use nbconvert is
-
-            &gt; jupyter nbconvert mynotebook.ipynb --to html
-
-            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf'].
-
-            &gt; jupyter nbconvert --to latex mynotebook.ipynb
-
-            Both HTML and LaTeX support multiple output templates. LaTeX includes
-            'base', 'article' and 'report'.  HTML includes 'basic', 'lab' and
-            'classic'. You can specify the flavor of the format used.
-
-            &gt; jupyter nbconvert --to html --template lab mynotebook.ipynb
-
-            You can also pipe the output to stdout, rather than a file
-
-            &gt; jupyter nbconvert mynotebook.ipynb --stdout
-
-            PDF is generated via latex
-
-            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
-
-            You can get (and serve) a Reveal.js-powered slideshow
-
-            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
-
-            Multiple notebooks can be given at the command line in a couple of
-            different ways:
-
-            &gt; jupyter nbconvert notebook*.ipynb
-            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
-
-            or you can specify the notebooks list in a config file, containing::
-
-                c.NbConvertApp.notebooks = ["my_notebook.ipynb"]
-
-            &gt; jupyter nbconvert --config mycfg.py
-
-To see all available configurables, use `--help-all`.
-
-</pre>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Despite it all, there were some limitations during the project's runtime, which caused this analysis to not be perfect.</p>
+<ul>
+<li>The small timeframe on when the data was recorded may cause a bias, as it was recorded over the span of five months only, most of which being in winter.</li>
+<li>The high amount of issues in the raw data caused alot of the time spent in this data analysis to be in wrangling and cleaning, causing our EDA to be quite short.</li>
+</ul>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-27-354c6a17fc4d&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_cell_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'shell'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">''</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'jupyter nbconvert --to html /content/Train_project.ipynb\n'</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/google/colab/_shell.py</span> in <span class="ansi-cyan-fg">run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-intense-fg ansi-bold">    356</span>     <span class="ansi-green-fg">if</span> line <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">not</span> cell<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    357</span>       cell <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">' '</span>
-<span class="ansi-green-fg">--&gt; 358</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> super<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_cell_magic<span class="ansi-blue-fg">(</span>magic_name<span class="ansi-blue-fg">,</span> line<span class="ansi-blue-fg">,</span> cell<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    359</span> 
-<span class="ansi-green-intense-fg ansi-bold">    360</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2471</span>             <span class="ansi-green-fg">with</span> self<span class="ansi-blue-fg">.</span>builtin_trap<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2472</span>                 args <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span>magic_arg_s<span class="ansi-blue-fg">,</span> cell<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 2473</span><span class="ansi-red-fg">                 </span>result <span class="ansi-blue-fg">=</span> fn<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2474</span>             <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">   2475</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">_shell_cell_magic</span><span class="ansi-blue-fg">(args, cmd)</span>
-<span class="ansi-green-intense-fg ansi-bold">    110</span>   result <span class="ansi-blue-fg">=</span> _run_command<span class="ansi-blue-fg">(</span>cmd<span class="ansi-blue-fg">,</span> clear_streamed_output<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    111</span>   <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> parsed_args<span class="ansi-blue-fg">.</span>ignore_errors<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 112</span><span class="ansi-red-fg">     </span>result<span class="ansi-blue-fg">.</span>check_returncode<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    113</span>   <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">    114</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">check_returncode</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    135</span>   <span class="ansi-green-fg">def</span> check_returncode<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    136</span>     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>returncode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 137</span><span class="ansi-red-fg">       raise subprocess.CalledProcessError(
-</span><span class="ansi-green-intense-fg ansi-bold">    138</span>           returncode<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>returncode<span class="ansi-blue-fg">,</span> cmd<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>args<span class="ansi-blue-fg">,</span> output<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>output
-<span class="ansi-green-intense-fg ansi-bold">    139</span>       )
-
-<span class="ansi-red-fg">CalledProcessError</span>: Command 'jupyter nbconvert --to html /content/Train_project.ipynb
-' returned non-zero exit status 255.</pre>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In the end, this project was a fun ride and a great learning experience, and not just about our data. This project helped me solidify many concepts and build new ones during our analysis, which proved to be very helpful.</p>
+<p>I thank you, dear reader, for taking the time out of your day to check out my little data analysis project and i hope you learned a thing or two from it.</p>
 </div>
 </div>
 </div>
